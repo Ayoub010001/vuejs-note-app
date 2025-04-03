@@ -46,7 +46,7 @@ export const useNotesStore = defineStore('notes', () => {
   };
 
   // Here is the Layout
-  const grid = ref('col');
+  const grid = ref(JSON.parse(localStorage.getItem('grid'))||'col');
 
   function getGrid() {
     return grid.value;
@@ -54,6 +54,7 @@ export const useNotesStore = defineStore('notes', () => {
 
   function togglegrid(){
     grid.value = grid.value === 'col' ? 'row' : 'col';
+    localStorage.setItem('grid', JSON.stringify(grid.value));
   }
 
   return {
