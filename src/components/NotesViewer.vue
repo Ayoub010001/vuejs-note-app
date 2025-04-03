@@ -16,8 +16,9 @@ const notesStore = useNotesStore();
 
             </div>
             <div class="note-content">
-                <input type="text" v-model="note.title" class="textInput title"/>
-                <input type="text" v-model="note.description" class="textInput desc"/>
+                <input type="text" v-model="note.title" class="textInput title note-card-title"/>
+                <!-- <input type="text" v-model="note.description" class="textInput desc"/> -->
+                <textarea v-model="note.description" class="textInput desc note-card-desc" placeholder="Note Description"></textarea>
                 <button class="delete-btn" @click="notesStore.deleteNote(note.id)"><LuCircleX/></button>
                 <button class="save-btn" @click="notesStore.refreshNote()"><AkDoubleCheck/></button>
             </div>
