@@ -130,9 +130,20 @@ nav p{
 }
 
 .note-content .note-card-desc::-webkit-scrollbar {
-    width: 0px;            
     background: transparent; 
 }
+.note-content .note-card-desc::-webkit-resizer {
+    /* background-color:  #fff; */
+    cursor: se-resize;
+}
+
+/* .note-content .note-card-desc::-webkit-scrollbar-thumb {
+    background-color:  transparent;
+}
+
+.note-content .note-card-desc::-webkit-scrollbar-track {
+    background-color:  transparent;
+} */
 
 
 .note-card:hover{
