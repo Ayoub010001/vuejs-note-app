@@ -45,12 +45,25 @@ export const useNotesStore = defineStore('notes', () => {
     localStorage.setItem('notes', JSON.stringify(notes.value));
   };
 
+  // Here is the Layout
+  const grid = ref('col');
+
+  function getGrid() {
+    return grid.value;
+  }
+
+  function togglegrid(){
+    grid.value = grid.value === 'col' ? 'row' : 'col';
+  }
+
   return {
     notes,
     searchQuery,
     filtredNotes,
     addNote,
     deleteNote,
-    refreshNote
+    refreshNote,
+    getGrid,
+    togglegrid,
   };
 });

@@ -1,3 +1,39 @@
+:root{
+  --light-text-color: #333;
+  --dark-text-color: #fff;
+
+  --light-body-background: #fff;
+  --light-card-background: #f8f8f8;
+  --lighter-card-background: #f2f2f2;
+
+  --dark-body-background: #fff;
+  --dark-card-background: #f8f8f8;
+  --darker-card-background: #f2f2f2;
+
+  --disabled-btn-background: #f2f2f2;
+  --btn-primary-background: #3958f8;
+
+}
+
+.light-background {
+  background-color: var(--light-body-background);
+}
+.dark-background {
+  background-color: var(--dark-body-background);
+}
+.light-card {
+  background-color: var(--light-card-background);
+}
+.dark-card {
+  background-color: var(--dark-card-background);
+}
+.lighter-card {
+  background-color: var(--lighter-card-background);
+}
+.darker-card {
+  background-color: var(--darker-card-background);
+}
+
 /* color palette from <https://github.com/vuejs/theme>
 :root {
   --vt-c-white: #ffffff;
